@@ -1,0 +1,11 @@
+{
+  "name": "rock-paper-scissors-game",
+  "version": "1.0.0",
+  "description": "ts",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc --watch"
+  },
+  "author": "GG",
+  "license": "ISC"
+}
