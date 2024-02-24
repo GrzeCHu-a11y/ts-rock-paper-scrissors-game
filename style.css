@@ -37,5 +37,10 @@ main {
     background-color: rgb(244, 213, 163);
     border: none;
     border-radius: 50%;
-    outline: none;
+    width: auto;
+    height: auto;
+}
+
+.item i {
+    pointer-events: none;
 }
