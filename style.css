@@ -7,8 +7,6 @@ html, h3, h2, h1 {
 
 body {
     font-family: "Fredoka", sans-serif;
-    /* background: rgb(253,127,29);
-    background: radial-gradient(circle, rgba(253,127,29,1) 0%, rgba(252,176,69,1) 100%); */
     background-image: url("src/images/scattered-forcefields.svg");
     background-position: center;
     box-sizing: border-box;
@@ -26,6 +24,14 @@ main {
     background-color: aliceblue;
     border: 2px solid black;
     border-radius: 10px;
+}
+
+/* mobile */
+
+@media (max-width: 1000px) {
+    main {
+        width: 95vw;
+    }
 }
 
 .wrapper {
@@ -52,6 +58,14 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+/* mobile */
+
+@media (max-width: 1000px) {
+    .items-container{
+        width: auto;
+    }
 }
 
 .item {
