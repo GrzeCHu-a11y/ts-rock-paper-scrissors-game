@@ -1,11 +1,16 @@
-html {
+html, h3, h2, h1 {
     height: auto;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: "Fredoka", sans-serif;
-    background: rgb(253,127,29);
-    background: radial-gradient(circle, rgba(253,127,29,1) 0%, rgba(252,176,69,1) 100%);
+    /* background: rgb(253,127,29);
+    background: radial-gradient(circle, rgba(253,127,29,1) 0%, rgba(252,176,69,1) 100%); */
+    background-image: url("src/images/scattered-forcefields.svg");
+    background-position: center;
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -17,10 +22,27 @@ body {
 
 main {
     width: 40vw;
-    height: 40vh;
+    height: auto;
     background-color: aliceblue;
+    border: 2px solid black;
     border-radius: 10px;
+}
+
+.wrapper {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.results-positioner {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .items-container {
@@ -51,13 +73,15 @@ main {
 }
 
 .status {
-    margin: 0 auto;
+    margin: 20px 0;
     max-width: 30%;
+    padding: 10px;
     background-color: rgb(197, 194, 194);
 }
 
 .status-h2 {
-    padding: 12px;
+   font-size: 22px;
+   margin: 0;
 }
 
 h3 {

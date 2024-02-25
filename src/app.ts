@@ -3,6 +3,7 @@ const statsContainer: HTMLElement = document.querySelector(".stats-container");
 const h3PlayerChosenItem: HTMLElement = document.querySelector(".player-chosen-item");
 const h3ComputerChosenItem: HTMLElement = document.querySelector(".computer-chosen-item");
 const h2Status: HTMLElement = document.querySelector(".status-h2");
+const statusContainer: HTMLElement = document.querySelector(".status");
 
 const options: string[] = ["scissors", "paper", "rock"];
 
@@ -36,6 +37,14 @@ const render = (playerItem: string, computerItem: string, status: string | null)
     h3PlayerChosenItem.innerText = `You hose: ${playerItem}` 
     h3ComputerChosenItem.innerText = `Computer hose: ${computerItem}` 
     h2Status.innerText = status;
+    
+    if (status === "You win") {
+        statusContainer.style.backgroundColor = "#36F356";
+    } else if (status === "Computer win") {
+        statusContainer.style.backgroundColor = "#F3363C";
+    } else if (status === "Draw") {
+        statusContainer.style.backgroundColor = "#C7C5C5"; 
+    }
 }
 
 items.forEach((item) => item.addEventListener("click", getPlayerChoice))
